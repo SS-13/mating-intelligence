@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useRouter } from 'next/navigation';
-import { useQuizStore } from '@/hooks/useQuizStore';
-import { getQuestions } from '@/lib/questions';
+import { useRouter } from "next/navigation";
+import { useQuizStore } from "@/hooks/useQuizStore";
+import { getQuestions } from "@/lib/questions";
 
 export default function QuestionsPage() {
   const router = useRouter();
@@ -14,7 +14,7 @@ export default function QuestionsPage() {
   const prevQuestion = useQuizStore((state) => state.prevQuestion);
 
   if (!gender) {
-    router.push('/');
+    router.push("/");
     return null;
   }
 
@@ -32,7 +32,7 @@ export default function QuestionsPage() {
       store.setAnswer(questions[unanswered].id, false);
       return;
     }
-    router.push('/results');
+    router.push("/results");
   };
 
   return (
@@ -61,7 +61,7 @@ export default function QuestionsPage() {
 
         <div className="answer-buttons">
           <button
-            className={`btn-option ${currentAnswer === true ? 'selected' : ''}`}
+            className={`btn-option ${currentAnswer === true ? "selected" : ""}`}
             onClick={() => {
               setAnswer(question.id, true);
               if (!isLastQuestion) {
@@ -74,7 +74,7 @@ export default function QuestionsPage() {
           </button>
 
           <button
-            className={`btn-option ${currentAnswer === false ? 'selected' : ''}`}
+            className={`btn-option ${currentAnswer === false ? "selected" : ""}`}
             onClick={() => {
               setAnswer(question.id, false);
               if (!isLastQuestion) {
@@ -88,9 +88,9 @@ export default function QuestionsPage() {
         </div>
       </div>
 
-      <div className="flex gap-3 mt-4 ">
+      <div className="flex gap-3 mt-4  ">
         <button
-          className="btn btn-secondary flex-1"
+          className="btn btn-secondary flex-1 mr-1"
           onClick={prevQuestion}
           disabled={currentQuestion === 0}
           style={{ opacity: currentQuestion === 0 ? 0.5 : 1 }}
