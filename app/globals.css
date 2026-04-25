@@ -164,9 +164,21 @@ body {
   padding: 4px;
 }
 
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-justify {
+  text-align: justify;
+}
+
 .mh-1 {
   margin-left: 4px;
   margin-right: 4px;
+}
+
+.mt-4 {
+  margin-top: 16px;
 }
 
 .mb-1 {
@@ -189,7 +201,7 @@ body {
   font-size: 12px;
 }
 
-.text-lg{
+.text-lg {
   font-size: 28px;
 }
 

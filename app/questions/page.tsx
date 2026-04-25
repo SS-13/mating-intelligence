@@ -54,7 +54,7 @@ export default function QuestionsPage() {
         </div>
 
         <div className="question-text">
-          <p className="text-base leading-relaxed">
+          <p className="text-base leading-relaxed text-align-left text-align-justify">
             {question.text}
           </p>
         </div>
@@ -88,7 +88,7 @@ export default function QuestionsPage() {
         </div>
       </div>
 
-      <div className="flex gap-3 mt-4">
+      <div className="flex gap-3 mt-4 ">
         <button
           className="btn btn-secondary flex-1"
           onClick={prevQuestion}
