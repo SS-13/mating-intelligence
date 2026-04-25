@@ -2,4 +2,4 @@
 2:I[44791,["/mating-intelligence/_next/static/chunks/0so-_5f03qgf8.js"],"default"]
 3:I[98960,["/mating-intelligence/_next/static/chunks/0so-_5f03qgf8.js"],"default"]
 4:[]
-0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"8Minzi21tc3DOxoGMN2M-"}
+0:{"rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"isPartial":false,"staleTime":300,"varyParams":"$W4","buildId":"R7PPpsCCT0EHr1XS4En2n"}
