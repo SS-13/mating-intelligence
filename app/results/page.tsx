@@ -40,7 +40,7 @@ export default function ResultsPage() {
 
         <div className="card mb-6">
           <h2 className="text-lg font-medium mb-4">维度分析</h2>
-          <DimensionChart scores={dimensionScores} gender={gender} />
+          <DimensionChart scores={dimensionScores} />
         </div>
 
         <div className="flex gap-4">
